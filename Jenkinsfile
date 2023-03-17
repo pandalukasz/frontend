@@ -63,7 +63,6 @@ pipeline {
                 script {
                     dockerTag = "RC-${env.BUILD_ID}" 
                     applicationImage=docker.build("$imageName:$dockerTag")
-                    }
                 }
             }
           }
